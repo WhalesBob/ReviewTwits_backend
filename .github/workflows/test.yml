@@ -13,6 +13,6 @@ jobs:
     steps:
       - name: Get Path Information
         run: |
-          cd /
+          cd /home
           pwd
           ls -al
