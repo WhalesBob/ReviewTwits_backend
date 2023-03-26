@@ -20,10 +20,17 @@ jobs:
           pwd
           ls -al
           
-      - name: Get Path Information
+      - name: Chrome Download
         run: |
           cd /home/reviewtwits_directory
           wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb 
           sudo apt install ./google-chrome-stable_current_amd64.deb 
           google-chrome --version
+          ls -al
+
+      - name: Download ChromeDriver
+        run: |
+          cd /home/reviewtwits_directory
+          wget https://chromedriver.storage.googleapis.com/89.0.4389.23/chromedriver_linux64.zip
+          unzip chromedriver_linux64.zip
           ls -al
