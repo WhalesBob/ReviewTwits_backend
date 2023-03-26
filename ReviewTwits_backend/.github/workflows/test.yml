@@ -1,0 +1,16 @@
+name: ReviewTwits Get Test
+
+on:
+  push:
+    branches:
+      - feature/WhalesBob
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get Path Information
+        run: |
+          ls -al
