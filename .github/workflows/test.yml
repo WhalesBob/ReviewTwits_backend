@@ -13,5 +13,5 @@ jobs:
     steps:
       - name: Get Path Information
         run: |
-          
+          pwd
           ls -al
